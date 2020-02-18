@@ -1,1 +1,1 @@
-export { default } from './quote-box.vue';
+export { default } from './quote-box.component.vue';

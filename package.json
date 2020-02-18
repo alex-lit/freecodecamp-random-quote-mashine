@@ -1,25 +1,9 @@
 {
-  "name": "@alexlit/vue-component-source",
-  "main": "./dist/vue-component-source.common.js",
+  "name": "freecodecamp-random-quote-mashine",
   "private": false,
-  "version": "1.0.1",
-  "description": "Vue mixin which comment components tag and source path in DOM (in dev tools)",
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/alex-lit/vue-component-source.git"
-  },
-  "keywords": [
-    "vue",
-    "devtools",
-    "comment",
-    "source",
-    "helper",
-    "mixin"
-  ],
+  "version": "1.0.0",
+  "description": "",
   "license": "MIT",
-  "bugs": {
-    "url": "https://github.com/alex-lit/vue-component-source/issues"
-  },
   "author": "Alexey Litovchenko",
   "maintainers": [
     {
@@ -28,20 +12,14 @@
       "url": "https://alexlit.gitlab.io"
     }
   ],
-  "homepage": "https://github.com/alex-lit/vue-component-source#readme",
   "scripts": {
     "serve": "vue-cli-service serve & chokidar './src/**/*.vue' -c \"if [ '{event}' = 'change' ]; then stylelint {path} --fix; fi;\"",
-    "build": "cross-env OUTPUT_DIR=docs vue-cli-service build && npm run build:lib",
-    "build:lib": "vue-cli-service build --target lib --name vue-component-source ./src/plugins/vue-component-source/vue-component-source.ts",
+    "build": "cross-env OUTPUT_DIR=docs vue-cli-service build",
     "lint": "vue-cli-service lint",
     "eslint": "eslint --ext .js,.ts,.vue ./src --fix",
     "stylelint": "stylelint 'src/**/*.css' 'src/**/*.pcss' 'src/**/*.vue' --fix",
     "up": "npx npm-check-updates -u & npm i && npm audit fix"
   },
-  "files": [
-    "src/components/vue-component-source/*",
-    "dist/*"
-  ],
   "dependencies": {
     "@alexlit/css-material-color-palette-variables": "^1.0.5",
     "bowser": "^2.8.1",

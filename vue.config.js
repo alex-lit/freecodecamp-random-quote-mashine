@@ -1,5 +1,5 @@
 module.exports = {
-  publicPath: process.env.NODE_ENV === 'production' ? '/vue-component-source/' : '/',
+  publicPath: process.env.NODE_ENV === 'production' ? '/freecodecamp-random-quote-mashine/' : '/',
 
   outputDir: process.env.OUTPUT_DIR || 'dist',
 
@@ -15,3 +15,4 @@ module.exports = {
     },
   },
 };
+ 
